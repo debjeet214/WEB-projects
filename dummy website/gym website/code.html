@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('imageesss/gym222.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 112%;
+        }
+
+        .logo {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 17px;
+            border-radius: 20px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            padding: 7px;
+            border: 2px;
+        }
+
+        .webname {
+            text-align: center;
+            font-weight: 900;
+            font-family: cursive;
+            font-size: small;
+            color: aquamarine;
+        }
+
+        .navbar {
+            border: 3px;
+            /* border: 2px solid violet; */
+            position: absolute;
+            top: 0px;
+            right: 440px;
+            display: block;
+            width: 40%;
+            margin: 17px auto;
+        }
+
+        .navi li {
+            display: inline-block;
+        }
+
+        .navi li a {
+            display: inline-block;
+            color: rgb(232, 89, 89);
+            text-decoration: none;
+            padding: 2px 8px;
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .navi li a:hover {
+            color: rgb(255, 186, 13);
+            text-decoration: overline;
+        }
+
+        .drop_button {
+            right: 30px;
+            top: 36px;
+            /* border: 3px solid rgb(126, 47, 200); */
+            display: inline-block;
+            position: absolute;
+        }
+
+        .btn {
+            margin: 10px 4px;
+            color: rgb(232, 89, 182);
+            background-color: rgb(1, 1, 19);
+            padding: 3px 5px;
+            border: 2px solid rgb(37, 49, 47);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(231, 140, 140);
+            color: black;
+        }
+
+        .containx {
+            border: 2px solid rgb(219, 158, 158);
+            margin: 50px 9px;
+            color: rgb(255, 106, 0);
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 180px;
+            left: 40px;
+            border-radius: 20px;
+        }
+
+        .forming1 input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 5px;
+            margin: 2px auto;
+            font-size: 17px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        #submission {
+            /* display: inline-block;
+            position: relative;
+            left: 330px; */
+            display: block;
+            margin: 10px auto;
+            width: 63%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img src="imageesss/logo-fotor-2023101112124.png" alt="xxx"> -->
+            <img src="imageesss/logo1.png" alt="xxx">
+            <div class="webname">FIT SORT</div>
+        </div>
+
+        <div class="navbar">
+            <ul class="navi">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Team </a></li>
+                <li><a href="#">Centers</a></li>
+                <li><a href="#">Quick Session</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="drop_button">
+            <bu class="btn">Login</bu>
+            <bu class="btn">Sign Up</bu>
+            <bu class="btn">Location</bu>
+        </div>
+    </header>
+    <div class="containx">
+        <h2>Join The Best Gym Network in INDIA</h2>
+        <form action="noaction.php">
+            <div class="forming1">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="forming1">
+                <input type="text" name="" placeholder="Current Age">
+            </div>
+            <div class="forming1">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="forming1">
+                <input type="text" name="" placeholder="Enter your Mobile no.">
+            </div>
+            <div class="forming1">
+                <input type="text" name="" placeholder="Enter Location">
+            </div>
+            <div class="forming1">
+                <button class="btn" id="submission">SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
