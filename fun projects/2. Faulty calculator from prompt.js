@@ -1,3 +1,5 @@
+// this faulty calculator is unique, caue it bwill only give faulty output only in 10% chance
+
 let random = Math.random();
 let a = prompt("Enter first number")
 let b = prompt("Enter second number")
