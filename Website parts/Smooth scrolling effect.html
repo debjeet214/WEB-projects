@@ -44,9 +44,12 @@
 <div id="section1" class="section">Section 1</div>
 <div id="section2" class="section">Section 2</div>
 <div id="section3" class="section">Section 3</div>
-<button onclick="scrollToTop()">Scroll To Top</button>
+  
+  <!-- Essential  adding the function to the button -->
+<button onclick="scrollToTop()">Scroll To Top</button>  
 <script>
-  function scrollToTop() {
+  // main function for scrolling
+  function scrollToTop() {   
     const scrollDuration = 1000; // milliseconds
     const scrollStep = -window.scrollY / (scrollDuration / 15);
     
