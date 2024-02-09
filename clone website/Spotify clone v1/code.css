@@ -88,6 +88,50 @@ body {
     padding: 20px;
 }
 
+.buttons>* {
+    margin: 0 12px;
+}
+
+.signupbtn {
+    background-color: #00ffb3; 
+    border: none; /* Remove border */
+    border-radius: 25px; 
+    color: rgb(0, 28, 79); 
+    padding: 10px 12px; 
+    width: 80px; 
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.464);
+}
+
+.signupbtn:hover {
+    background-color: #96fff6;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.loginbtn {
+    background-color: #00ffb3;
+    border: none;  /* removes the border */
+    border-radius: 20px;
+    color: rgb(1, 27, 75);
+    padding: 10px 12px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.514);
+}
+
+.loginbtn:hover {
+    background-color: #96fff6;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .spotifyPlaylists {
     padding: 16px;
 }
@@ -142,50 +186,6 @@ body {
     right: 17px;
     opacity: var(--a);
     transition: all 1s ease-out;
-}
-
-.buttons>* {
-    margin: 0 12px;
-}
-
-.signupbtn {
-    background-color: #00ffb3; 
-    border: none; /* Remove border */
-    border-radius: 25px; 
-    color: rgb(0, 28, 79); 
-    padding: 10px 12px; 
-    width: 80px; 
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold; 
-    transition: background-color 0.3s ease; 
-    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.464);
-}
-
-.signupbtn:hover {
-    background-color: #96fff6;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.loginbtn {
-    background-color: #00ffb3;
-    border: none;  /* removes the border */
-    border-radius: 20px;
-    color: rgb(1, 27, 75);
-    padding: 10px 12px;
-    width: 80px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.514);
-}
-
-.loginbtn:hover {
-    background-color: #96fff6;
-    font-weight: bold;
-    font-size: 15px;
 }
 
 .playbar {
