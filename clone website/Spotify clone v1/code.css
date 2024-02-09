@@ -491,20 +491,25 @@ body {
 }
 
 
-/* For Webkit browsers (e.g., Chrome, Safari) */
+/* Width and color of the scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
+    background-color: transparent;
   }
   
-  ::-webkit-scrollbar-thumb {
-    background-color: #333; /* Dark color for the thumb */
-    border-radius: 6px;
-  }
-  
+  /* Track (the background of the scrollbar) */
   ::-webkit-scrollbar-track {
-    background-color: #222; /* Dark color for the track */
+    background: transparent; /* Make it transparent */
   }
   
-  /* For Firefox */
-  /* scrollbar-color: #333 #222; Dark color for the thumb and track in Firefox */
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 255, 179); /* Semi-transparent black */
+    border-radius: 10px; /* Roundness of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(5, 5, 5, 0.145); /* Darker semi-transparent black */
+  }
   
