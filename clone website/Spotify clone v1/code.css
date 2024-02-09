@@ -150,35 +150,44 @@ body {
 }
 
 .signupbtn {
-    background-color: rgb(34 34 34);
-    color: rgb(156, 148, 148);
-    font-weight: bold;
-    border: none;
-    outline: none;
+    background-color: #00ffb3; 
+    border: none; /* Remove border */
+    border-radius: 25px; 
+    color: rgb(0, 28, 79); 
+    padding: 10px 12px; 
+    width: 80px; 
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.464);
 }
 
 .signupbtn:hover {
-    font-size: 17px;
-    color: white
+    background-color: #96fff6;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .loginbtn {
-    background-color: white;
-    border-radius: 21px;
-    color: black;
-    padding: 10px;
-    width: 79px;
+    background-color: #00ffb3;
+    border: none;  /* removes the border */
+    border-radius: 20px;
+    color: rgb(1, 27, 75);
+    padding: 10px 12px;
+    width: 80px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 1px rgba(44, 122, 118, 0.514);
 }
 
 .loginbtn:hover {
+    background-color: #96fff6;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
 }
-
 
 .playbar {
     display: flex;
