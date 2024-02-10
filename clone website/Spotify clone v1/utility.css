@@ -1,0 +1,68 @@
+.border{
+    border: 2px solid greenyellow;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounding{
+    border-radius: 15px;
+}
+
+.m1{
+    margin: 5px;
+}
+
+.p1{
+    padding: 12px;
+}
+
+
+/* Width and color of the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+  
+  /* Track (the background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Make it transparent */
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 255, 179); /* Semi-transparent black */
+    border-radius: 10px; /* Roundness of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(5, 5, 5, 0.145); /* Darker semi-transparent black */
+  }
+  
+  
+  
+  
