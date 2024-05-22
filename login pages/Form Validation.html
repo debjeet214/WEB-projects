@@ -1,0 +1,126 @@
+<!-- Assignment 13: To implement form validation using JavaScript -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+        /* CSS Styles for basic layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form id="registration-form" onsubmit="return validateForm()">
+                <input type="text" id="username" name="username"
+                    placeholder="Username">
+                <div id="username-error" class="error"></div>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <div id="email-error" class="error"></div>
+                <input type="password" id="password" name="password"
+                    placeholder="Password">
+                <div id="password-error" class="error"></div>
+                <input type="password" id="confirm-password"
+                    name="confirm-password" placeholder="Confirm Password">
+                <div id="confirm-password-error" class="error"></div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+        <script>
+        function validateForm() {
+            var username = document.getElementById('username').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var confirmPassword = document.getElementById('confirm-password').value.trim();
+
+            var usernameError = document.getElementById('username-error');
+            var emailError = document.getElementById('email-error');
+            var passwordError = document.getElementById('password-error');
+            var confirmPasswordError = document.getElementById('confirm-password-error');
+
+// Resetting error messages
+usernameError.innerHTML = '';
+emailError.innerHTML = '';
+passwordError.innerHTML = '';
+confirmPasswordError.innerHTML = '';
+
+var isValid = true;
+
+// Validating username
+if (username === '') {
+    usernameError.innerHTML = 'Username is required';
+    isValid = false;
+}
+
+// Validating email
+if (email === '') {
+    emailError.innerHTML = 'Email is required';
+    isValid = false;
+} else if (!validateEmail(email)) {
+    emailError.innerHTML = 'Invalid email format';
+    isValid = false;
+}
+
+// Validating password
+if (password === '') {
+    passwordError.innerHTML = 'Password is required';
+    isValid = false;
+}
+
+// Validating confirm password
+if (confirmPassword === '') {
+                confirmPasswordError.innerHTML = 'Confirm Password is required';
+                isValid = false;
+            } else if (password !== confirmPassword) {
+                confirmPasswordError.innerHTML = 'Passwords do not match';
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Function to validate email format
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+    </body>
+</html>
