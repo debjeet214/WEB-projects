@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sun{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: #fff;
+    /* inset: This keyword specifies that the shadow should be an inner shadow */
+    box-shadow: inset 0 0 90px #fbac1366,
+                 0 0 50px 10px #fbac1366,
+                 0 0 120px 20px #ffffff99,
+                 0 0 20px 10px #ffffff99 ;
+
+    animation: rotate 10s linear infinite;
+    perspective: 1000px;
+}
+
+
+/* Here the second line in the shadow is explained like this way:
+
+0 0: These values represent the horizontal offset (0px) and vertical offset (0px), meaning the shadow will not be shifted horizontally or vertically.
+50px: This is the blur radius, creating a medium blurred shadow.
+10px: This is the spread radius, which extends the shadow by 10px.
+#fbac1366: This is the color of the shadow, given in RGBA format where 66 is the alpha (opacity) value. The color #fbac13 is a shade of yellow-orange, and 66 represents approximately 40% opacity. */
+
+
+.Moon{
+    width: 194PX;
+    height: 194px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+    background-color: #111;
+    border-radius: 50%;
+    transform: translate(calc(-50% -10px), -50%);
+    box-shadow: inset -5px 0 20px #fbac1399,
+                inset 0 0 10px #ffffffb3;
+}
+
+.corona{
+    width: 40px;
+    height: 80px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 90px), -50%);
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 0 30px #fbac131a,
+                0 0 40px 20px white,
+                0 0 60px 30px #fbac1380 ;
+}
+
+.corona:before,
+.corona:after{
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #000000 0%, white);
+}
+
+.corona:before{
+    width: 300px;
+    height: 3px;
+    top: 45px;
+    transform: rotate(40deg);
+    left: -110px;
+    opacity: 0.3;
+}
+
+.corona:after{
+    width: 500px;
+    height: 3px;
+    top: 40px;
+    left: -225px;
+    transform: rotate(-80deg);
+}
